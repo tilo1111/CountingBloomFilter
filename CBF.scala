@@ -1,7 +1,8 @@
-object Task1
+object CBF
 {
   import scala.util.hashing.MurmurHash3
 
+  // Exeplary class Employee
   class Employee (name: String, surname : String, id : Int)
   {
     val Name : String = name
@@ -15,7 +16,7 @@ object Task1
     }
   }
 
-
+  // CBF implementation
   class CBF(A: LazyList[Employee], m: Int, k: Int)
   {
     var buffer: Array[Int] = new Array[Int](m)
@@ -67,7 +68,7 @@ object Task1
 
   }
 
-
+  // Program example
   def main(args:Array[String]): Unit =
   {
     val emp1 = new Employee("Filip", "Jaszczyk", 123)
